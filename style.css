@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 20px;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+}
+
+.malla-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.materia {
+  background: #fff;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow .2s;
+}
+
+.materia:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  border-color: #3366cc;
+}
+
+.materia.aprobada {
+  background: #e0ffe0;
+  border-color: #2ecc40;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.45);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 400px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 8px; right: 16px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
